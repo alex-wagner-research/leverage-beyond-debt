@@ -4,6 +4,11 @@ This repository holds the contract database behind the paper *Leverage Beyond De
 from the AI Build-Out* (Alexander F. Wagner, University of Zurich; working paper, 2026), and the
 paper's Figure 2 with the numbers it plots. The paper is posted separately.
 
+![Figure 2 of the paper: for each firm, reported debt and the obligations beyond it, relative to total assets](output/figures/fig1c_ladder_panels.png)
+
+*The paper's Figure 2: each firm's reported debt and the obligations beyond it, relative to its
+total assets (described below).*
+
 From the filings of the 37 listed U.S. firms with a major role in the AI infrastructure
 build-out (cloud platforms, chip and systems vendors, compute providers, and data-center owners),
 the database codes 155 financing arrangements: leases, purchase and capacity commitments,
@@ -47,6 +52,27 @@ best reading of the filings; a reader who reads a passage differently is invited
   `lines` columns count lines in the plain-text conversion of the document that was coded; the
   quoted passages are verbatim, so each can be found in the document itself.
 
+## An example: the PORTS campus
+
+Row `HL-0001` of `contracts.csv` is the financing of an AI data-center campus in Piketon, Ohio:
+NVIDIA guarantees, up to a cap, the leases of the campus between SB Energy's landlord companies
+and an OpenAI affiliate as tenant.
+
+- Its leg in `instruments.csv`, `HL-0001a`, runs from `E-NVDA` to `E-SBE-LANDLORD` (both in
+  `entities.csv`): a residual value guaranty capped at $105bn (`notional_usd_bn` 105.0), in
+  NVIDIA's L3 at the gross and upper bounds (rule C2, a guarantee not yet in force).
+- Row `EV-0002` of `evidence.csv` quotes the passage behind the cap, "NVIDIA's aggregate payment
+  obligation is cumulatively capped at $105 billion for its initial commitment under the
+  Agreements", and cites accession `0001045810-26-000069`, file `nvda-20260817.txt`, line 47.
+- In `data/filings.csv`, that accession and file lead to NVIDIA's current report of August 17,
+  2026, at
+  https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm, where the
+  sentence can be found.
+- The trigger and NVIDIA's rights to the campus come from the form of guaranty filed as an
+  exhibit to NVIDIA's 10-Q (accession `0001045810-26-000075`, file `nvda2027q2ex101.txt`): rows
+  `EV-0228` (the tenant's insolvency or monetary default) and `EV-0229` (NVIDIA may "assume the
+  Lease with Guarantor or another entity designated by Guarantor, as the new tenant").
+
 ## Figure 2
 
 Contractual obligations beyond reported debt, by firm, relative to total assets. Panel A adds to
@@ -83,6 +109,9 @@ first posted version).
 
 ## Licence and citation
 
-The data and the documentation are released under the Creative Commons Attribution 4.0 licence
-(`LICENSE`). The SEC filings themselves are public records. To cite the database, see
-`CITATION.cff`; to cite the results, cite the paper.
+The data and the documentation are released under the Creative Commons Attribution 4.0
+International licence; `LICENSE` holds its official text. Please give credit as: Alexander F.
+Wagner, *Leverage Beyond Debt: Evidence from the AI Build-Out* (data),
+https://github.com/alex-wagner-research/leverage-beyond-debt. The SEC filings the data cite are
+public records and are not subject to the licence. To cite the database, see `CITATION.cff`; to
+cite the results, cite the paper.
