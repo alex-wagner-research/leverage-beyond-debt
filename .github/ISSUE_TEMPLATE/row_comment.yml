@@ -1,0 +1,49 @@
+name: Row comment
+description: You read a filing passage differently from the way a row codes it.
+title: "[row] "
+labels: ["row comment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Every row of the database carries its filing, lines and quoted passage; the fastest
+        way to settle a reading is to point at the lines. Rows are identified by the id in the first
+        column of each table (for example `HL-0043a` in `instruments.csv`, `ORCL` in `firm_periods.csv`,
+        `EV-0123` in `evidence.csv`).
+  - type: input
+    id: row
+    attributes:
+      label: Table and row id
+      placeholder: "instruments.csv, HL-0043a"
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field (column) in question
+      placeholder: "notional_usd_bn"
+    validations:
+      required: true
+  - type: textarea
+    id: filing
+    attributes:
+      label: What the filing says
+      description: The accession number of the filing and the passage, quoted.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: The value or coding you believe is right, and why
+    validations:
+      required: true
+  - type: dropdown
+    id: material
+    attributes:
+      label: Do you expect the change to move a number reported in the paper?
+      options:
+        - "I do not know"
+        - "Probably not"
+        - "Yes (say which, if you can)"
+    validations:
+      required: false

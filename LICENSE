@@ -1,0 +1,17 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The data and the documentation in this repository (the tables under data/, the files under
+output/, codebook.md, CHANGELOG.md and README.md) are licensed under the Creative Commons
+Attribution 4.0 International licence. You are free to share and adapt them for any purpose,
+including commercially, provided you give appropriate credit, link to the licence and indicate
+whether changes were made.
+
+The full legal code is at https://creativecommons.org/licenses/by/4.0/legalcode and a
+summary at https://creativecommons.org/licenses/by/4.0/.
+
+Attribution: Alexander F. Wagner, "Leverage Beyond Debt: Evidence from the AI Build-Out (data)",
+https://github.com/alex-wagner-research/leverage-beyond-debt.
+
+The SEC filings the data cite are public records of the United States government and are not
+subject to this licence. Code, where a release includes it, is licensed separately under the
+MIT licence (LICENSE-CODE).

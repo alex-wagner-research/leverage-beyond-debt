@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the paper and this repository."
+type: dataset
+title: "Leverage Beyond Debt: Evidence from the AI Build-Out (data)"
+authors:
+  - family-names: Wagner
+    given-names: Alexander F.
+    affiliation: "University of Zurich, CEPR, ECGI, Harvard University, and Swiss Finance Institute"
+year: 2026
+version: "1.0"
+repository-code: "https://github.com/alex-wagner-research/leverage-beyond-debt"
+license: CC-BY-4.0
+preferred-citation:
+  type: unpublished
+  title: "Leverage Beyond Debt: Evidence from the AI Build-Out"
+  authors:
+    - family-names: Wagner
+      given-names: Alexander F.
+  year: 2026
+  notes: "Working paper. Work in progress; comments welcome."
