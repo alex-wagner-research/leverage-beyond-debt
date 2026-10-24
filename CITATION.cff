@@ -7,7 +7,7 @@ authors:
     given-names: Alexander F.
     affiliation: "University of Zurich, CEPR, ECGI, Harvard University, and Swiss Finance Institute"
 year: 2026
-version: "1.0"
+version: "1.1"
 repository-code: "https://github.com/alex-wagner-research/leverage-beyond-debt"
 license: CC-BY-4.0
 preferred-citation:
