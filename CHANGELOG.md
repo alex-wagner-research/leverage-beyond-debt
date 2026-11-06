@@ -3,6 +3,14 @@
 One entry per version of the data, newest first. The rules and rulings the data follow are in
 `codebook.md`; a change to a value cites the filing it rests on.
 
+## v1.2
+
+With the paper's revised version of November 2026. No value or id changes. The lessee of the AI-rack
+leases that Broadcom transferred to its financial partner with a backstop (HL-0031) is identified as
+Anthropic from the two companies' filings (ruling R25): the entity's name and the notes of HL-0031 and
+HL-0031a change, and its id stays. The codebook adds R25 and a Section 5 on how the data were collected
+and checked, with the tools used in the coding.
+
 ## v1.1
 
 With the paper's revised version of October 2026. No value, row or id changes. The codebook is now

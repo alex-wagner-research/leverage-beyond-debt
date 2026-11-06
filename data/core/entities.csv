@@ -68,7 +68,7 @@ E-ANON-DDTL5-LENDERS,CRWV DDTL 5.0 lender group,lender group,group,,,,,,filing,"
 E-ANON-NBIS-LENDERS,Nebius secured lenders (July 2026 facility),secured lenders,anonymized,,,,,,anonymized,HL-0033 $775m SOFR+250; collateral = GPUs + investment-grade customer contract cash flows
 E-ANON-AMD-PARTNERS,AMD commercial partners (lessees),commercial partner,anonymized,,,,,,anonymized,lessees whose DC leases AMD guarantees (HL-0030)
 E-ANON-AMD-LESSORS,Lessors to AMD commercial partners,third-party lessors,anonymized,,,,,,anonymized,beneficiaries of HL-0030 guarantees
-E-ANON-AVGO-LESSEE,Broadcom AI-rack lessee (unnamed),a customer,anonymized,,,,,,anonymized,lessee under Apollo-owned AI racks; unnamed in filing; press reports conflict (OpenAI; Anthropic); NOT attributable from filings (HL-0031)
+E-ANON-AVGO-LESSEE,Anthropic (lessee of the Broadcom-backstopped AI-rack leases),a customer; our customer (Broadcom 10-Q),anonymized,,,,,,anonymized,"lessee under Apollo-owned AI racks; identified as Anthropic under R25 from the matching $42bn convertible-note facility for the lease rent (Broadcom 10-Q of 2026-08-02 L833; Anthropic S-1 of 2026-10-26 L3264-3268, L9747-9748); id kept so that the engine fold is unchanged (HL-0031)"
 E-ANON-ORCL-LANDLORDS,Oracle data-center landlords/developers,landlords/developers,anonymized,,,,,,anonymized,counterparties to $260bn not-yet-commenced leases (HL-0043)
 E-ANON-ORCL-LESSORLENDER,Lender to Oracle's guaranteed lessor,an unnamed lessor's lender,anonymized,,,,,,anonymized,beneficiary of ORCL $3.3bn guarantee maturing Sep-2026 (HL-0043)
 E-ANON-MSFT-LANDLORDS,Microsoft datacenter landlords/developers,landlords/developers,anonymized,,,,,,anonymized,counterparties to $329.1bn not-yet-commenced leases (HL-0024)

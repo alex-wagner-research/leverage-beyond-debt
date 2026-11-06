@@ -3,8 +3,9 @@
 The rules the data follow, each with its reason. This release holds five tables of the contract
 database (`data/core/`), the list of the filings they cite (`data/filings.csv`), and the numbers
 the paper's Figure 2 plots. Section 1 describes the tables column by column, Section 2 the
-conventions they are coded under, Section 3 the rulings on individual rows, and Section 4 the
-rules that settle conflicting figures and the tables' structure. A rule or ruling keeps the id it
+conventions they are coded under, Section 3 the rulings on individual rows, Section 4 the
+rules that settle conflicting figures and the tables' structure, and Section 5 how the data were
+collected and checked. A rule or ruling keeps the id it
 was taken under (U1, C2, R7-D2, AUDIT6-D4, CU-7, ...), and the tables' notes cite those ids, so a
 reader can follow a cell to its rule here.
 
@@ -562,6 +563,11 @@ R21 concern the inputs of the paper's stress test, which this release does not i
   not yet effective, so they count with the PORTS guaranties among the guarantees not yet in force.
   They are described as agreed, subject to definitive agreements, not as signed (EV-0493).
 
+- R25 (2026-11-06). The lessee of the AI-rack leases Broadcom transferred with a backstop (HL-0031) is
+  Anthropic: the $42bn convertible-note facility for the lease rent in Broadcom's 10-Q (L833) matches
+  Anthropic's S-1 (L3260-3268, L9747-9748). The entity keeps the id E-ANON-AVGO-LESSEE and carries Anthropic's name; no amount
+  depends on the identification. The rest of the master leases (about $36bn of rent),
+  not in Broadcom's accounts, is not coded.
 ## 4. Conflicting figures and the tables' structure
 
 Where two figures of one fact differ, the writer's own filing decides; within one filing, the table
@@ -638,3 +644,28 @@ the ladder cites.
   post-quarter leases, HL-0105a). The components outside the network are the upper-bound items only
   (pipelines, contractual maxima, Alphabet's open-order gap, prepayments with a financing
   component).
+
+## 5. How the data were collected
+
+The tables were built from the filings in four steps; every number in the paper is computed from
+them by the project's code, which a later release of this repository adds.
+
+1. **Retrieval.** The filings were downloaded from SEC EDGAR and converted to plain text; the
+   `lines` columns of the tables count lines in these conversions, and `data/filings.csv` links each
+   to its document on EDGAR.
+2. **Coding.** Each filing was read and its arrangements were coded into the tables under the
+   conventions of Section 2 with the help of a large language model, Anthropic's Claude (the
+   versions Fable 5, Fable 5.1, Opus 5 and Opus 5.5, used between August 28 and November 6, 2026),
+   working under the author's direction. For every coded value the coding records the filing's
+   accession, the document, the line range and a verbatim quotation, in the row itself or in
+   `evidence.csv`. There is no single prompt: the coding followed the rules of Sections 2 and 4, and
+   where a filing could be read in more than one way the author ruled and the ruling is in
+   Section 3. A value can therefore be checked against the public filing it quotes without the
+   model.
+3. **Checks.** The project's checks confirm that every quotation appears within the lines it cites,
+   that every reference among the tables resolves, that each row's bounds are ordered, and that
+   every contingent instrument carries a coverage class (2.4).
+4. **Verification.** The author verified 97 of the 155 contracts against the filings (rulings R3 to
+   R9). The other 58 were checked field by field against the filings and then read again by four
+   independent readers, separate instances of the same model, each reporting only where it disagreed
+   with the coding (R12); the corrections are recorded there.
