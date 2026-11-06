@@ -566,8 +566,10 @@ R21 concern the inputs of the paper's stress test, which this release does not i
 - R25 (2026-11-06). The lessee of the AI-rack leases Broadcom transferred with a backstop (HL-0031) is
   Anthropic: the $42bn convertible-note facility for the lease rent in Broadcom's 10-Q (L833) matches
   Anthropic's S-1 (L3260-3268, L9747-9748). The entity keeps the id E-ANON-AVGO-LESSEE and carries Anthropic's name; no amount
-  depends on the identification. The rest of the master leases (about $36bn of rent),
-  not in Broadcom's accounts, is not coded.
+  depends on the identification. Broadcom's exposure enters the stress test through the backstop for the
+  transferred leases and through its contracted revenue insofar as that includes the leases, which neither
+  filing says; the whole rent, $161.2bn, is under a tenth of Broadcom's equity value. The entity is typed
+  private_co and stays in the demand side's AI-clouds node, which bears the same shock.
 ## 4. Conflicting figures and the tables' structure
 
 Where two figures of one fact differ, the writer's own filing decides; within one filing, the table

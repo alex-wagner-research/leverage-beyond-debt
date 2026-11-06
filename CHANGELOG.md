@@ -3,6 +3,13 @@
 One entry per version of the data, newest first. The rules and rulings the data follow are in
 `codebook.md`; a change to a value cites the filing it rests on.
 
+## v1.3
+
+No value or id changes. The entity of ruling R25 (E-ANON-AVGO-LESSEE) is typed as a private company, and
+R25 states how Broadcom's exposure to the leases enters the stress test: through its backstop for the leases
+its financial partner took over, and through its contracted revenue insofar as that includes the leases,
+which neither filing says.
+
 ## v1.2
 
 With the paper's revised version of November 2026. No value or id changes. The lessee of the AI-rack
